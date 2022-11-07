@@ -1,34 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React, {useState } from 'react'
+import Awards from './Awards'
+import Clients from './Clients'
+import Contacts from './Contacts'
+import Experience from './Experience'
+import Footer from './Footer'
+import Header from './Header'
+import Intro from './Intro'
+import Loader from './Loader'
+import Modal from './Modal'
+import Projects from './Projects'
+import Services from './Services'
+import Testimonials from './Testimonials'
 
-function App() {
-  const [count, setCount] = useState(0)
+class App extends React.Component {
+  componentDidMount() {
+    this._Mounted = true;
+    if (this._Mounted) {
+      const script = document.createElement("script");
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+      script.src = "js/script.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }
+
+  render() {
+    return (
+      <>
+        <Loader />
+        <div className="wrapper">
+          <Header />
+          <div id="content" className="content">
+              <div className="homepage-personal a-pagepiling">
+                <Intro />
+                <Services />
+                <Projects />
+                <Awards />
+                <Experience/>
+                <Clients />
+                <Testimonials />
+                <Contacts />
+              </div>
+          </div>
+          <Footer />
+        </div>
+        <Modal />
+      </>
+    )
+  }
 }
 
 export default App
