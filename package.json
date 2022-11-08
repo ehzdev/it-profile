@@ -1,9 +1,10 @@
 {
-  "homepage":"https://ehzdev.github.io/it-profile",
-  "name": "it-manager-portfolio",
+  "homepage":"https://ehzdev.github.io/pro",
+  "name": "it-pro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
