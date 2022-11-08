@@ -1,5 +1,4 @@
-
-function Loader() {
+const Loader = () => {
     return (
       <div className="preloader">
         <div className="three-bounce">
@@ -11,6 +10,4 @@ function Loader() {
     );
 }
 
-
 export default Loader
-

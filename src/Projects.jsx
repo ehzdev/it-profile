@@ -1,5 +1,4 @@
-
-function Projects() {
+const Projects = () => {
     return (
         <div className="section pp-scrollable slide-dark slide-dark-bg text-white slide-personal-projects">
             <div className="carousel-project-personal a-carousel-projects owl-carousel owl-theme">
@@ -136,6 +135,4 @@ function Projects() {
     );
 }
 
-
 export default Projects
-

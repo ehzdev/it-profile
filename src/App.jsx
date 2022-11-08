@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import {useEffect} from 'react'
 import Awards from './Awards'
 import Clients from './Clients'
 import Contacts from './Contacts'
@@ -12,42 +12,42 @@ import Projects from './Projects'
 import Services from './Services'
 import Testimonials from './Testimonials'
 
-class App extends React.Component {
-  componentDidMount() {
-    this._Mounted = true;
-    if (this._Mounted) {
-      const script = document.createElement("script");
+const App = () => {
 
-      script.src = "js/script.js";
-      script.async = true;
-      document.body.appendChild(script);
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "js/script.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
     }
-  }
+  }, []);
 
-  render() {
-    return (
-      <>
-        <Loader />
-        <div className="wrapper">
-          <Header />
-          <div id="content" className="content">
-              <div className="homepage-personal a-pagepiling">
-                <Intro />
-                <Services />
-                <Projects />
-                <Awards />
-                <Experience/>
-                <Clients />
-                <Testimonials />
-                <Contacts />
-              </div>
-          </div>
-          <Footer />
+  return (
+    <>
+      <Loader />
+      <div className="wrapper">
+        <Header />
+        <div id="content" className="content">
+            <div className="homepage-personal a-pagepiling">
+              <Intro />
+              <Services />
+              <Projects />
+              <Awards />
+              <Experience/>
+              <Clients />
+              <Testimonials />
+              <Contacts />
+            </div>
         </div>
-        <Modal />
-      </>
-    )
-  }
+        <Footer />
+      </div>
+      <Modal />
+    </>
+  )
 }
 
 export default App

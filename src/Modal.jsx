@@ -1,5 +1,4 @@
-
-function Modal() {
+const Modal = () => {
     return (
         <div className="modal fade" id="send-request">
             <div className="modal-dialog modal-dialog-centered" role="document">
@@ -35,6 +34,4 @@ function Modal() {
     );
 }
 
-
 export default Modal
-

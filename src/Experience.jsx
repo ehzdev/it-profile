@@ -1,5 +1,4 @@
-
-function Experience() {
+const Experience = () => {
     return (
         <div className="section pp-scrollable slide-dark slide-personal-experience">
             <div className="slide-container">
@@ -119,6 +118,4 @@ function Experience() {
     );
 }
 
-
 export default Experience
-

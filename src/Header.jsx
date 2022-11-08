@@ -1,5 +1,4 @@
-
-function Header() {
+const Header = () => {
     return (
         <header id="header" className="header header-fixed">
           <div className="header-bg"></div>
@@ -68,6 +67,4 @@ function Header() {
     );
 }
 
-
 export default Header
-

@@ -1,5 +1,4 @@
-
-function Testimonials() {
+const Testimonials = () => {
     return (
         <div className="section pp-scrollable slide-dark slide-personal-testimonials">
             <div className="slide-container">
@@ -81,4 +80,3 @@ function Testimonials() {
 }
 
 export default Testimonials
-

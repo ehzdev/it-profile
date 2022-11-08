@@ -1,5 +1,4 @@
-
-function Contacts() {
+const Contacts = () => {
     return (
         <div className="section pp-scrollable slide-personal-contacts">
             <div className="slide-container">
@@ -75,6 +74,4 @@ function Contacts() {
     );
 }
 
-
-export default Contacts
-
+export default  Contacts

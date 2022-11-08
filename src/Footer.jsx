@@ -1,5 +1,4 @@
-
-function Footer() {
+const Footer = () => {
     return (
         <footer id="footer" className="footer">
           <ul className="social social-fixed">
@@ -15,6 +14,4 @@ function Footer() {
     );
 }
 
-
 export default Footer
-

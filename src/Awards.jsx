@@ -1,5 +1,4 @@
-
-function Awards() {
+const Awards = () => {
     return (
         <div className="section pp-scrollable slide-dark-footer slide-personal-awards">
             <div className="slide-container">
@@ -49,9 +48,7 @@ function Awards() {
             </div>
             </div>
         </div>
-    );
+    )
 }
 
-
-export default Awards
-
+ export default Awards

@@ -1,5 +1,4 @@
-
-function Services() {
+const Services = () => {
     return (
         <div className="section pp-scrollable slide-personal-services">
             <div className="slide-container">
@@ -72,6 +71,4 @@ function Services() {
     );
 }
 
-
 export default Services
-

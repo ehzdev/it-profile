@@ -1,5 +1,4 @@
-
-function Clients() {
+const Clients = () => {
     return (
         <div className="section pp-scrollable slide-personal-clients">
             <div className="slide-container">
@@ -55,6 +54,4 @@ function Clients() {
     );
 }
 
-
 export default Clients
-
