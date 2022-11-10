@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Intro = () => {
-
+    const API_URL = import.meta.env.VITE_API_URL;
     const [atritbutes, setAttributes] = useState()
 
     useEffect(() => {
@@ -10,7 +10,7 @@ const Intro = () => {
         redirect: 'follow'
       };
       
-      fetch("https://ehzdev-strapi.up.railway.app/api/intro", requestOptions)
+      fetch(`${API_URL}/intro`, requestOptions)
         .then(response => response.json())
         .then(result => setAttributes(result.data.attributes))
         .catch(error => console.log('error', error));

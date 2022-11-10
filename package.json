@@ -1,5 +1,5 @@
 {
-  "homepage":"https://ehzdev.github.io/pro",
+  "homepage": "https://ehzdev.github.io/pro",
   "name": "it-pro",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
